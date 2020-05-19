@@ -1,5 +1,7 @@
 # vue3.0-demo
 
+基于 vue3.0-beta + vuex 4.0.0-alpha + vue-router 4.0.0-alpha的练手项目
+
 ## Project setup
 ```
 yarn install
@@ -7,7 +9,7 @@ yarn install
 
 ### Compiles and hot-reloads for development
 ```
-yarn serve
+yarn start
 ```
 
 ### Compiles and minifies for production
@@ -19,6 +21,3 @@ yarn build
 ```
 yarn lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

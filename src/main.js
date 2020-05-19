@@ -1,12 +1,15 @@
-import Vue from 'vue'
+import {
+  createApp
+} from 'vue'
 import App from './App.vue'
 import router from './router'
 import store from './store'
 
-Vue.config.productionTip = false
+const app = createApp(App)
 
-new Vue({
-  router,
-  store,
-  render: h => h(App)
-}).$mount('#app')
+// 定义全局指令
+app.directive('hide', function (el, binding) {
+  el.style.display = binding.value ? 'block' : 'none'
+})
+
+app.use(router).use(store).mount('#app')
